@@ -1,0 +1,375 @@
+<html>
+<head>
+    <title>Camilo Polymeris - Resume</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,600" rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: 300;
+            text-rendering: optimizeLegibility;
+        }
+
+        body {
+            font-size: 12pt;
+            margin: 0 auto;
+            max-width: 90em;
+        }
+
+        h1, h2, h3, b {
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 100%;
+        }
+
+        a {
+            color: red;
+        }
+
+        #header {
+            border-bottom: 3px solid black;
+            text-align: right;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #header h1, #header h2 {
+            font-size: 48pt;
+        }
+
+        #header h2 {
+            color: red;
+            font-weight: 400;
+        }
+
+        .intro-section, .main-section {
+            margin: 2em 0 2em 0;
+        }
+
+        .main-section {
+            align-items: flex-start;
+            display: flex;
+        }
+
+        .main-section:last-of-type {
+            padding-bottom: 3em;
+            border-bottom: 3px solid black;
+        }
+
+        .section-header {
+            border-bottom: 3px solid red;
+            padding-bottom: 1em;
+            flex-basis: 11em;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        .section-body {
+            display: flex;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .section-item {
+            flex-basis: 35%;
+            flex-grow: 1;
+            margin: 0 1em;
+            max-width: 20em;
+            min-width: 10em;
+        }
+
+        .section-item:only-child, .section-item.wide {
+            flex-basis: 100%;
+            max-width: 64em;
+        }
+
+        @media (max-width: 1000px) {
+            .main-section {
+                flex-direction: column;
+            }
+
+            .section-header {
+                flex-basis: 0;
+                width: 11em;
+            }
+        }
+
+        @media print {
+            .main-section {
+                flex-direction: column;
+            }
+
+            .section-body, .section-header, .section-item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+<section id="header">
+    <h1>Camilo Polymeris</h1>
+    <h2>Software Developer</h2>
+</section>
+<section class="intro-section">
+    <div class="section-body">
+        <div class="section-item">
+            <p>
+                Full-stack developer with a love of simple systems solving complex domain problems.
+                Microservices fan. Business-oriented and customer focused.
+                Currently based in Santiago, Chile.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="main-section">
+    <div class="section-body">
+        <div class="section-item">
+            <h3>Contact</h3>
+            <p>+506&nbsp;7089&nbsp;9592</p>
+            <p><a href="mailto:cpolymeris@gmail.com">cpolymeris@gmail.com</a></p>
+            <p><a href="https://github.com/polymeris">github.com/polymeris</a></p>
+            <p><a href="https://www.linkedin.com/in/cpolymeris/">linkedin.com/in/cpolymeris</a></p>
+        </div>
+        <div class="section-item">
+            <h3>Primary languages</h3>
+            <p>Clojure, Java</p>
+            <h3>Secondary languages</h3>
+            <p>Python, HTML & CSS, Javascript, Typescript, C++, C#</p>
+            <h3>Natural languages</h3>
+            <p>Spanish, English, (Swiss-)German</p>
+        </div>
+        <div class="section-item">
+            <h3>Databases</h3>
+            <p>Relational DBs (Postgres in particular)</p>
+            <p>DynamoDB, Datomic, ElasticSearch</p>
+            <h3>Cloud technologies</h3>
+            <p>AWS stack (including EC2, IAM, RDS, SQS, Kinesis, SWF, Lambda, S3, RedShift, and many others)</p>
+            <h3>DevOps</h3>
+            <p>Docker, Docker Compose, Ansible, AWS DevOps tools</p>
+        </div>
+    </div>
+</section>
+<section class="main-section">
+    <h3 class="section-header">Employment History</h3>
+    <div class="section-body">
+       <div class="section-item">
+            <h3>CircleCI</h3>
+            <p>Senior Software Development Engineer</p>
+            <p>April 2018 – present</p>
+            <p>
+            </p>
+        </div>
+        <div class="section-item">
+            <h3>Amazon</h3>
+            <p>Software Development Engineer II</p>
+            <p>July 2017 – April 2018</p>
+            <p>
+                Design and development of highly scalable software architectures using a mix of AWS and internal tools,
+                applying agile practices.
+                Migration and refactoring of existing applications. Direct contact with product management, working in a
+                data-driven, customer-focused environment.
+            </p>
+        </div>
+        <div class="section-item">
+            <h3>Wivo</h3>
+            <p>Director of Technology</p>
+            <p>November 2014 – June 2017</p>
+            <p>
+                Wearing many hats in addition to my developer job: Hands-on management and architectural
+                responsibilities. Hiring developers and training them in our systems and technologies, including
+                Clojure.
+                Working with remote engineers and creating the process and environment for the team to thrive, including
+                introducing best practices like code reviews, continuous integration and delivery, and sprint-based
+                planning.
+            </p>
+            <p>
+                Design and implementation of a microservices architecture that allowed for flexibility, isolation of
+                clients and scalability.
+            </p>
+        </div>
+        <div class="section-item">
+            <h3>Wivo</h3>
+            <p>Software Developer</p>
+            <p>January 2014 – October 2014</p>
+            <p>
+                Full-stack development on Wivo's product and operations platforms.
+            </p>
+            <p>
+                Work on Wivo’s operations platform, synchronizing the output of a distributed network of 3D cameras,
+                automatic supervision of their performance and operation status, data acquisition through computer
+                vision and machine learning techniques, generation of statistics and UI implementation.
+            </p>
+            <p>
+                Wivo is a small startup and their rapidly changing requirements and specs have proven to be a
+                particularly
+                challenging and interesting aspect of the job.
+            </p>
+        </div>
+        <div class="section-item">
+            <h3>GNOME Foundation & Open Source Geospatial Foundation</h3>
+            <p>Google Summer of Code Intern</p>
+            <p>June 2013 – September 2013</p>
+            <p>
+                Desktop UI application development in C#: RAW developer plugin for the f-spot photo manager.
+            </p>
+            <p>May 2011 – August 2011, May 2012 – August 2012</p>
+            <p>
+                Implementing a set of integrations for external tools with QGIS's plugin system.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="main-section">
+    <h3 class="section-header">Major Projects</h3>
+    <div class="section-body">
+        <div class="section-item wide">
+            <h3>Amazon</h3>
+            <p>Java, Typescript, AWS services</p>
+            <p>
+                To ensure compliance with NDAs, projects developed at Amazon have been omitted from this section.
+            </p>
+            <p>
+                Responsibilities assumed in these projects include design, development and improvement of
+                key internal systems serving thousands of amazonians, utilizing state-of-the-art cloud computing and
+                big data technologies.
+            </p>
+        </div>
+        <div class="section-item wide">
+            <h3>Wivo Dull Boy</h3>
+            <p>Clojure, Clojurescript, RabbitMQ, OpenVPN</p>
+            <p>IoT data acquisition and aggregation</p>
+            <p>
+                The distributed and varied nature of Wivo's sensors poses a challenge when it comes to data acquisition.
+                The sites vary wildly in infrastructure reliability making it mandatory to design a very robust system.
+            </p>
+            <p>
+                Dull Boy was one of the first microservices implemented at Wivo, while getting away from the MVP's
+                monolithic model. While its companion service Hannibal handled customer-provided data, and was as such
+                a more traditional ETL service, Dull Boy's purpose was to serve as the ingestion point of
+                sensor-generated timeseries. The unreliability in site connectivity and power supply made it a necessity
+                to design reproducible, idempotent data pipeline, for which Clojure statelessness was very well suited.
+            </p>
+            <p>
+                To decouple spikes in incoming requests, RabbitMQ was used as a loading queue, and to assist in
+                customer isolation and security, VPNs where created. The generation of these services was automated
+                with Docker and Docker Compose.
+            </p>
+            <p>
+                An operational monitoring UI was also created with ClojureScript. This was later spun-off into its own
+                service.
+            </p>
+        </div>
+        <div class="section-item wide">
+            <h3>Wivo Chigurh</h3>
+            <p>Flexible business-oriented time-series database</p>
+            <p>Clojure, Postgres, ElasticSearch</p>
+            <p>
+                As a very small startup, every customer was of extreme importance for Wivo. Thus, it was necessary
+                to create a flexible platform which could address the particular needs of each one.
+            </p>
+            <p>
+                Existing time-series databases were focused on operational aspects, relegating important factors
+                in the retail business, so we implemented our own system based on Postgres and ElasticSearch which
+                addressed those requirements.
+            </p>
+            <p>Postgres serves as the source of truth, while ElasticSearch serves
+                as a store for materialized views of each customer's business metrics. The pipeline that renders these
+                views is fully configurable, enabling the execution of complex queries involving both data acquired
+                from Wivo's on-site sensors and provided by the client.
+                The produced reports ultimately allow for actionable insights on the customer's side.
+            </p>
+        </div>
+        <div class="section-item wide">
+            <h3>QGIS Geosciences Tools Integration</h3>
+            <p>Python, QGIS</p>
+            <p>
+                Implement a QGIS plugin that makes it possible to run the versatile
+                "System for Automated Geoscientific Analysis" (SAGA GIS) modules from Quantum GIS.
+                Generate a GUI on-the-fly and run the modules using either the SAGA command-line application or the SAGA
+                Python API, if available. Automate the process of information exchange between those two systems.
+                Incorporate the most used remote sensing, classification & filtering algorithms from the OrfeoToolbox
+                into the Sextante framework, using its python bindings. Incorporate multithreading to sextante to
+                enable algorithm interruption.
+            </p>
+            <p>
+                For many other minor open source projects and contributions see
+                <a href="https://github.com/polymeris">github.com/polymeris</a>
+            </p>
+        </div>
+    </div>
+</section>
+<!--<section class="main-section">-->
+<!--<h3 class="section-header">Courses & Certifications</h3>-->
+<!--<div class="section-body">-->
+<!--<div class="section-item">-->
+<!--<h3>AWS Solutions Architect - Associate</h3>-->
+<!--<p>-->
+<!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum porta nibh, id-->
+<!--malesuada libero.-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="section-item">-->
+<!--<h3>Architecting on AWS</h3>-->
+<!--<p>-->
+<!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum porta nibh, id-->
+<!--malesuada libero.-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="section-item">-->
+<!--<h3>Developing on AWS</h3>-->
+<!--<p>-->
+<!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum porta nibh, id-->
+<!--malesuada libero.-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="section-item">-->
+<!--<h3>Making Great Hiring Decisions</h3>-->
+<!--<p>-->
+<!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum porta nibh, id-->
+<!--malesuada libero.-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+</section>
+<section class="main-section">
+    <h3 class="section-header">Education & Training</h3>
+    <div class="section-body">
+        <div class="section-item">
+            <h3>Developing on AWS</h3>
+            <p>
+                Developing on AWS helps developers understand how to use the AWS SDK to develop secure and scalable
+                cloud applications.
+                The course provides in-depth knowledge about how to interact with AWS using code and covers key concepts
+                and best practices.
+            </p>
+            <h3>Architecting on AWS</h3>
+            <p>
+                Course designed to teach solutions architects how to optimize the use of the AWS Cloud by understanding
+                AWS services and how these services fit into cloud-based solutions.
+            </p>
+            <h3>Internal Amazon trainings</h3>
+            <p>
+                Covering technical aspects as well as hiring, mentoring, ethics, writing and development methodologies.
+            </p>
+        </div>
+        <div class="section-item">
+            <h3>Universidad de Concepción, Chile</h3>
+            <p>Geology, unfinished</p>
+            <p>
+                While I did not finish my undergraduate studies in Geology, it was applying computers to Geophysics
+                projects developed in conjunction with my professors that reignited my love for programming and
+                lead me down my current career path.
+            </p>
+        </div>
+    </div>
+</section>
+<footer>
+    <!--<small>Fork this design at</small>-->
+</footer>
+</body>
+</html>
